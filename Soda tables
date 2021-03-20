@@ -1,0 +1,17 @@
+x=eval(input())
+y=eval(input())
+
+def mcd(a, b):
+
+    """ Aquesta funció calcula el mcd de dos números fent servir l'algoritme d'Euclides
+        
+    Font: https://lawebdelprogramador.com
+
+    """
+
+    r = a % b if b != 0 else a   """si b és cero, el mcd és a directament"""
+
+    return b if r == 0 else mcd(b, r)
+    
+
+print (mcd(x,y))
